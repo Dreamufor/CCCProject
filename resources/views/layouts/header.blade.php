@@ -9,12 +9,12 @@
                     <span class="icon-bar"></span>
                 </button>
                 <div class="navbar-brand">
-                    <a href="index.html"><h1>Day</h1></a>
+                    <a href="index.html"><h1>CCC@Kitchen</h1></a>
                 </div>
             </div>
             <div class="navbar-collapse collapse">
                 <div class="menu">
-                    <ul class="nav nav-tabs" role="tablist">
+                    <ul class="nav nav-tabs" role="tablist" style="font-size: 18px;">
                         <li role="presentation"><a href="index.html" class="active">Home</a></li>
                         <li role="presentation"><a href="about.html">About Us</a></li>
                         <li role="presentation"><a href="services.html">Services</a></li>

@@ -977,7 +977,7 @@ textarea#message{
   Footer
 ============================ */
 footer {
-	padding:50px;
+	padding:40px;
 	background:#65AAF0;
 }
 
@@ -1076,7 +1076,7 @@ ul.social-network {
 }
 .sub-footer  {
 	background:#272727;
-	padding:30px;
+	padding:0px;
 }
 
 ul.social-network li {

@@ -22,6 +22,7 @@
                         <li role="presentation"><a href="contact.html">Contact</a></li>
                         <li><a class="nav-link" href="{{ url('/login') }}">Login</a></li>
                         <li><a class="nav-link" href="{{ url('/register') }}">Register</a></li>
+                        <li><a class="nav-link" href="{{ url('admin/staff') }}">Staff</a></li>
 
                     </ul>
                 </div>

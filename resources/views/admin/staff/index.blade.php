@@ -6,7 +6,7 @@
             @include('admin.sidebar')
 
             <div class="col-md-8 col-md-offset-2">
-                <div class="card">
+                <div class="card" style="border:solid 1px rgba(132,192,204,0.83);border-radius: 15px; margin: 30px auto;">
                     <div class="card-header">Staff</div>
                     <div class="card-body">
                         <a href="{{ url('/admin/staff/create') }}" class="btn btn-success btn-sm" title="Add New Staff">

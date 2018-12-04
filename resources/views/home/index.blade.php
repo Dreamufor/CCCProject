@@ -7,7 +7,7 @@
 
 
 @section('content')
-    <div style="height: 425px;">
+    <div>
 
 
 

@@ -17,8 +17,6 @@
                     <ul class="nav nav-tabs" role="tablist" style="font-size: 16px;">
                         <li role="presentation"><a href="index.html" class="active">Home</a></li>
                         <li role="presentation"><a href="about.html">About Us</a></li>
-                        <li role="presentation"><a href="services.html">Services</a></li>
-                        <li role="presentation"><a href="gallery.html">Gallery</a></li>
                         <li role="presentation"><a href="contact.html">Contact</a></li>
                         <li><a class="nav-link" href="{{ url('/login') }}">Login</a></li>
                         <li><a class="nav-link" href="{{ url('/register') }}">Register</a></li>

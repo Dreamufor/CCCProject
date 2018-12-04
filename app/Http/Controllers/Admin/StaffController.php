@@ -18,7 +18,7 @@ class StaffController extends Controller
     public function index(Request $request)
     {
         $keyword = $request->get('search');
-        $perPage = 25;
+        $perPage = 5;
 
         if (!empty($keyword)) {
             $staff = Staff::where('nickname', 'LIKE', "%$keyword%")
@@ -41,9 +41,11 @@ class StaffController extends Controller
      *
      * @return \Illuminate\View\View
      */
-    public function create()
+    public function create(Staff $staff)
     {
-        return view('admin.staff.create');
+        return view('admin.staff.create',[
+            'staff' => $staff,
+        ]);
     }
 
     /**

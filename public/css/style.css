@@ -17,7 +17,7 @@ body {
 	font-size:14px;
 	font-weight:300;
 	line-height:1.6em;
-	color:#fff;
+	color: rgba(3, 30, 62, 0.87);
 	background-color:#fff;
 	overflow-x:hidden;
 }

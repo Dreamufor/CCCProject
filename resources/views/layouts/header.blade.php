@@ -1,5 +1,5 @@
 <header id="header">
-    <nav class="navbar navbar-default navbar-static-top" role="banner">
+    <nav class="navbar navbar-fixed-top" role="banner">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -8,26 +8,44 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <div class="navbar-brand">
-                    <a href="index.html"><h1>CCC@Kitchen</h1></a>
-                </div>
+                <a class="navbar-brand" href="index.html">CCC@Kitchen</a>
             </div>
-            <div class="navbar-collapse collapse">
-                <div class="menu">
-                    <ul class="nav nav-tabs" role="tablist" style="font-size: 16px;">
-                        <li role="presentation"><a href="index.html" class="active">Home</a></li>
-                        <li role="presentation"><a href="about.html">About Us</a></li>
-                        <li role="presentation"><a href="contact.html">Contact</a></li>
-                        <li><a class="nav-link" href="{{ url('/login') }}">Login</a></li>
-                        <li><a class="nav-link" href="{{ url('/register') }}">Register</a></li>
-                        <li><a class="nav-link" href="{{ url('admin/staff') }}">Staff</a></li>
 
-                    </ul>
-                </div>
+            <div class="collapse navbar-collapse navbar-right">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    {{--<li><a href="about-us.html">About Us</a></li>--}}
+                    {{--<li><a href="services.html">Services</a></li>--}}
+                    {{--<li><a href="portfolio.html">Portfolio</a></li>--}}
+                    {{--<li><a href="blog.html">Blog</a></li>--}}
+                    {{--<li><a href="contact-us.html">Contact</a></li>--}}
+                    <li><a href="{{ url('/login') }}">Login</a></li>
+                    <li><a href="{{ url('/register') }}">Register</a></li>
+                    <li><a href="{{ url('admin/staff') }}">Staff</a></li>
+                </ul>
             </div>
         </div>
         <!--/.container-->
     </nav>
     <!--/nav-->
+
 </header>
 <!--/header-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

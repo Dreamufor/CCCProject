@@ -9,10 +9,6 @@
 @section('content')
     <div>
 
-
-
-
-
     </div>
 
 

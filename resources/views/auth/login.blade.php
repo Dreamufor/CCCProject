@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8 col-md-offset-2">
-            <div class="card" style="border:solid 1px rgba(132,192,204,0.83);border-radius: 15px; margin: 30px auto;">
+            <div class="card" style="border:solid 1px rgba(132,192,204,0.83);border-radius: 15px; ">
                 {{--<div class="card-header">{{ __('Login') }}</div>--}}
                 <br>
                 <div class="card-body">

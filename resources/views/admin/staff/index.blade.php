@@ -3,11 +3,11 @@
 @section('content')
     <div class="container">
         <div class="row">
-            <div class="col-md-3">
-            @include('admin.sidebar')
-            </div>
-            <div class="col-md-9">
-                <div class="card" style="border:solid 1px rgba(132,192,204,0.83);border-radius: 15px; padding: 2%;">
+            {{--<div class="col-md-3">--}}
+            {{--@include('admin.sidebar')--}}
+            {{--</div>--}}
+            <div class="col-md-12">
+                <div class="card" style="border:solid 0.5px rgba(119,119,119,0.43);border-radius: 5px; padding: 1.5%;">
                     <div class="card-header">Staff</div>
                     <hr>
                     <div class="card-body">
@@ -15,7 +15,7 @@
                             <i class="fa fa-plus" aria-hidden="true"></i> Add New
                         </a>
 
-                        <form method="GET" action="{{ url('/admin/staff') }}" accept-charset="UTF-8" class="form-inline my-2 my-lg-0 float-right" role="search">
+                        <form method="GET" action="{{ url('/admin/staff') }}" accept-charset="UTF-8" class="form-inline my-2 my-lg-0" role="search">
                             <div class="input-group">
                                 <input type="text" class="form-control" name="search" placeholder="Search..." value="{{ request('search') }}">
                                 <span class="input-group-append">
@@ -25,21 +25,20 @@
                                 </span>
                             </div>
                         </form>
-
                         <br/>
                         <br/>
                         <div class="table-responsive">
                             <table class="table">
                                 <thead>
                                     <tr>
-                                        <th>#</th><th>Nickname</th><th>Number</th><th>Email</th><th>Fullname</th><th>Taxcode</th><th>Actions</th>
+                                        <th>#</th><th>Nickname</th><th>Number</th><th>Email</th><th>Fullname</th><th>Taxcode</th><th>Student Loan</th><th>Kiwisaver</th><th>Actions</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                 @foreach($staff as $item)
                                     <tr>
                                         <td>{{ $loop->iteration or $item->id }}</td>
-                                        <td>{{ $item->nickname }}</td><td>{{ $item->number }}</td><td>{{ $item->email }}</td><td>{{ $item->fullname }}</td><td>{{ $item->taxcode }}</td>
+                                        <td>{{ $item->nickname }}</td><td>{{ $item->number }}</td><td>{{ $item->email }}</td><td>{{ $item->fullname }}</td><td>{{ $item->taxcode }}</td><td>{{ $item->studentloan }}</td><td>{{ $item->kiwisaver }}</td>
                                         <td>
                                             <a href="{{ url('/admin/staff/' . $item->id) }}" title="View Staff"><button class="btn btn-info btn-sm"><i class="fa fa-eye" aria-hidden="true"></i> View</button></a>
                                             <a href="{{ url('/admin/staff/' . $item->id . '/edit') }}" title="Edit Staff"><button class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></a>

@@ -23,16 +23,43 @@
     <input class="form-control" name="taxcode" type="text" id="taxcode" value="{{ $staff->taxcode}}" >
     {!! $errors->first('taxcode', '<p class="help-block">:message</p>') !!}
 </div>
+
 <div class="form-group {{ $errors->has('kiwisaver') ? 'has-error' : ''}}">
-    <label for="kiwisaver" class="control-label">{{ 'Kiwisaver' }}</label>
-    <input class="form-control" name="kiwisaver" type="text" id="kiwisaver" value="{{ $staff->kiwisaver}}" >
+    <label for="studentloan" class="control-label">{{ 'kiwisaver' }}</label>
+    <select class="form-control" name="kiwisaver" id="kiwisaver">
+            <option value="No">
+                No
+            </option>
+            <option value="Yes">
+                Yes
+            </option>
+    </select>
     {!! $errors->first('kiwisaver', '<p class="help-block">:message</p>') !!}
 </div>
+
+{{--<div class="form-group {{ $errors->has('kiwisaver') ? 'has-error' : ''}}">--}}
+    {{--<label for="kiwisaver" class="control-label">{{ 'Kiwisaver' }}</label>--}}
+    {{--<input class="form-control" name="kiwisaver" type="text" id="kiwisaver" value="{{ $staff->kiwisaver}}" >--}}
+    {{--{!! $errors->first('kiwisaver', '<p class="help-block">:message</p>') !!}--}}
+{{--</div>--}}
+
 <div class="form-group {{ $errors->has('studentloan') ? 'has-error' : ''}}">
-    <label for="studentloan" class="control-label">{{ 'Studentloan' }}</label>
-    <input class="form-control" name="studentloan" type="text" id="studentloan" value="{{ $staff->studentloan}}" >
+    <label for="studentloan" class="control-label">{{ 'studentloan' }}</label>
+    <select class="form-control" name="studentloan" id="studentloan">
+        <option value="No">
+            No
+        </option>
+        <option value="Yes">
+            Yes
+        </option>
+    </select>
     {!! $errors->first('studentloan', '<p class="help-block">:message</p>') !!}
 </div>
+{{--<div class="form-group {{ $errors->has('studentloan') ? 'has-error' : ''}}">--}}
+    {{--<label for="studentloan" class="control-label">{{ 'Studentloan' }}</label>--}}
+    {{--<input class="form-control" name="studentloan" type="text" id="studentloan" value="{{ $staff->studentloan}}" >--}}
+    {{--{!! $errors->first('studentloan', '<p class="help-block">:message</p>') !!}--}}
+{{--</div>--}}
 
 
 <div class="form-group">

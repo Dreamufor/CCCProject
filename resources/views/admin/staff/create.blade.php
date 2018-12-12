@@ -3,10 +3,10 @@
 @section('content')
     <div class="container">
         <div class="row">
-            @include('admin.sidebar')
+            {{--@include('admin.sidebar')--}}
 
             <div class="col-md-8 col-md-offset-2">
-                <div class="card">
+                <div class="card" style="border:solid 0.5px rgba(119,119,119,0.43);border-radius: 5px; padding: 5%;">
                     <div class="card-header">Create New Staff</div>
                     <div class="card-body">
                         <a href="{{ url('/admin/staff') }}" title="Back"><button class="btn btn-warning btn-sm"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back</button></a>

@@ -17,11 +17,12 @@ class CreateStaffTable extends Migration
             $table->timestamps();
             $table->string('nickname')->nullable();
             $table->string('number')->nullable();
-            $table->string('email')->nullable();
+            $table->string('email');
             $table->string('fullname')->nullable();
             $table->string('taxcode')->nullable();
-            $table->string('kiwisaver')->nullable();
-            $table->string('studentloan')->nullable();
+            $table->enum('kiwisaver',['Yes','No'])->default('No');
+            $table->enum('studentloan',['Yes','No'])->default('No');
+
             });
     }
 

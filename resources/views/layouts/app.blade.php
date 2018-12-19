@@ -8,8 +8,10 @@
     <title>CCC@Kitchen</title>
 
     <!-- Bootstrap -->
+    {{--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">--}}
     <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('css/font-awesome.min.css')}}">
+
     <link href="{{asset('css/animate.min.css')}}" rel="stylesheet">
     <link href="{{asset('css/prettyPhoto.css')}}" rel="stylesheet">
     <link href="{{asset('css/style.css')}}" rel="stylesheet">
@@ -28,7 +30,7 @@
     <div>
         @include('layouts.header')
 
-        <main class="container-fluid" style="height:72vh;margin-top: 10%;">
+        <main class="container-fluid" style="margin: 8% auto 2% auto; min-height: calc(100vh - 258px);">
             @yield('content')
         </main>
 

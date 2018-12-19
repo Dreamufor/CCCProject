@@ -5,9 +5,10 @@
         <div class="row">
             {{--@include('admin.sidebar')--}}
 
-            <div class="col-md-8 col-md-offset-2">
-                <div class="card" style="border:solid 0.5px rgba(119,119,119,0.43);border-radius: 5px; padding: 5%;">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="card" style="border:solid 0.5px rgba(119,119,119,0.43);border-radius: 5px; padding: 5% 10%;">
                     <div class="card-header">Create New Staff</div>
+                    <hr>
                     <div class="card-body">
                         <a href="{{ url('/admin/staff') }}" title="Back"><button class="btn btn-warning btn-sm"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back</button></a>
                         <br />

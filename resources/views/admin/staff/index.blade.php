@@ -15,14 +15,12 @@
                             <i class="fa fa-plus" aria-hidden="true"></i> Add New
                         </a>
 
-                        <form method="GET" action="{{ url('/admin/staff') }}" accept-charset="UTF-8" class="form-inline my-2 my-lg-0" role="search">
+                        <form method="GET" action="{{ url('/admin/staff') }}" accept-charset="UTF-8" class="form-inline my-2 my-lg-0" role="search" style="float:right;">
                             <div class="input-group">
-                                <input type="text" class="form-control" name="search" placeholder="Search..." value="{{ request('search') }}">
-                                <span class="input-group-append">
-                                    <button class="btn btn-secondary" type="submit">
+                                <input type="text" name="search" placeholder="Search..." value="{{ request('search') }}" style="display: inline-block; padding: 2%;">
+                                    <span><button class="btn btn-default" type="submit">
                                         <i class="fa fa-search"></i>
-                                    </button>
-                                </span>
+                                    </button></span>
                             </div>
                         </form>
                         <br/>

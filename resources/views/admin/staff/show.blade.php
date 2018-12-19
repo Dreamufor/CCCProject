@@ -6,7 +6,7 @@
             {{--@include('admin.sidebar')--}}
 
             <div class="col-md-8 col-md-offset-2">
-                <div class="card" style="border:solid 0.5px rgba(119,119,119,0.43);border-radius: 5px; padding: 5%;">
+                <div class="card" style="border:solid 0.5px rgba(119,119,119,0.43);border-radius: 5px; padding: 5% 10%;">
                     <div class="card-header">Staff {{ $staff->id }}</div>
                     <div class="card-body">
 
@@ -28,6 +28,7 @@
                                         <th>ID</th><td>{{ $staff->id }}</td>
                                     </tr>
                                     <tr><th> Nickname </th><td> {{ $staff->nickname }} </td></tr><tr><th> Number </th><td> {{ $staff->number }} </td></tr><tr><th> Email </th><td> {{ $staff->email }} </td></tr><tr><th> Fullname </th><td> {{ $staff->fullname }} </td></tr><tr><th> Taxcode </th><td> {{ $staff->taxcode }} </td></tr>
+                                    <tr><th> Student Loan </th><td> {{ $staff->studentloan }} </td></tr><tr><th> KiwiSaver </th><td> {{ $staff->kiwisaver }} </td></tr>
                                 </tbody>
                             </table>
                         </div>

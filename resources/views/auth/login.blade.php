@@ -77,7 +77,7 @@
     <div class="container">
 
         <div class="row">
-            <div class="span8 offset2">
+            <div class="span6 offset3">
                 <div class="call-action">
 
                     <div class="text offset1">
@@ -88,7 +88,6 @@
                                 <div class="form-group">
                                     <label for="email" class="text-md-right">{{ __('E-Mail Address') }}</label>
 
-                                    <div >
                                         <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required autofocus>
 
                                         @if ($errors->has('email'))
@@ -96,12 +95,10 @@
                                         <strong>{{ $errors->first('email') }}</strong>
                                     </span>
                                         @endif
-                                    </div>
                                 </div>
 
                                 <div class="form-group">
                                     <label for="password" class="text-md-right">{{ __('Password') }}</label>
-                                    <div>
                                         <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
 
                                         @if ($errors->has('password'))
@@ -109,27 +106,24 @@
                                         <strong>{{ $errors->first('password') }}</strong>
                                     </span>
                                         @endif
-                                    </div>
                                 </div>
+
+                                <div>
+                                    <div style="display:flex; flex-direction: row; justify-content: center; align-items: center">
+                                            <input type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }} style="margin-bottom: 4%; margin-right: 2%;">
+
+                                            <label for="remember">
+                                                {{ __('Remember Me') }}
+                                            </label>
+                                        </div>
+                                </div>
+
+
+
+
 
                                 <div class="form-group row">
                                     <div>
-                                        <div class="form-check">
-                                            <span><input class="form-check-input" style="margin-left: 24%; vertical-align: center;" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}></span>
-
-                                            <span><label class="form-check-label" style="float: right;margin-right: 24%;vertical-align: center;" for="remember">
-                                                {{ __('Remember Me') }}
-                                            </label></span>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-
-
-
-                                <div class="form-group row">
-                                    <div class="span4">
                                         <div style="margin:0 30%;">
                                             <button type="submit" class="btn btn-large btn-theme">
                                               Login
@@ -140,7 +134,7 @@
 
 
                                     </div>
-                                    <div class="span8" style="text-align: center;">
+                                    <div style="text-align: center;">
                                         <a class="btn btn-link" href="{{ route('password.request') }}">
                                             {{ __('Forgot Your Password?') }}
                                         </a>

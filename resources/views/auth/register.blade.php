@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-offset-2 col-md-8">
-            <div class="card" style="border:solid 1px rgba(132,192,204,0.83);border-radius: 15px; margin: 30px auto;">
+            <div class="card" style="border:solid 1px rgba(132,192,204,0.83);border-radius: 15px; margin: 5% auto;">
                 <br>
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}">

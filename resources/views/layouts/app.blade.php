@@ -7,21 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CCC@Kitchen</title>
 
-    <!-- Bootstrap -->
-    {{--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">--}}
-    <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
-    <link rel="stylesheet" href="{{asset('css/font-awesome.min.css')}}">
+    <!-- styles -->
+    <link href="{{asset('assets/css/bootstrap.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/css/bootstrap-responsive.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/css/prettyPhoto.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/js/google-code-prettify/prettify.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/css/flexslider.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/css/style.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/color/cyan.css')}}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,600,400italic|Open+Sans:400,600,700" rel="stylesheet">
 
-    <link href="{{asset('css/animate.min.css')}}" rel="stylesheet">
-    <link href="{{asset('css/prettyPhoto.css')}}" rel="stylesheet">
-    <link href="{{asset('css/style.css')}}" rel="stylesheet">
-    <link href="{{asset('css/responsive.css')}}" rel="stylesheet">
-    <!-- =======================================================
-      Theme Name: Gp
-      Theme URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-templat/
-      Author: BootstrapMade
-      Author URL: https://bootstrapmade.com
-    ======================================================= -->
 
 </head>
 
@@ -30,7 +25,7 @@
     <div>
         @include('layouts.header')
 
-        <main class="container-fluid" style="margin: 8% auto 2% auto; min-height: calc(100vh - 258px);">
+        <main class="container-fluid" style="margin: 2% auto; min-height: calc(100vh - 360px);">
             @yield('content')
         </main>
 
@@ -39,12 +34,18 @@
     </div>
     </body>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="{{asset('js/jquery.js')}}"></script>
-    <script src="{{asset('js/bootstrap.min.js')}}"></script>
-    <script src="{{asset('js/jquery.prettyPhoto.js')}}"></script>
-    <script src="{{asset('js/jquery.isotope.min.js')}}"></script>
-    <script src="{{asset('js/wow.min.js')}}"></script>
-    <script src="{{asset('js/main.js')}}"></script>
 
+    <script src="{{asset('assets/js/jquery.js')}}"></script>
+    <script src="{{asset('assets/js/raphael-min.js')}}"></script>
+    <script src="{{asset('assets/js/jquery.easing.1.3.js')}}"></script>
+    <script src="{{asset('assets/js/bootstrap.js')}}"></script>
+    <script src="{{asset('assets/js/google-code-prettify/prettify.js')}}"></script>
+    <script src="{{asset('assets/js/jquery.elastislide.js')}}"></script>
+    <script src="{{asset('assets/js/jquery.prettyPhoto.js')}}"></script>
+    <script src="{{asset('assets/js/jquery.flexslider.js')}}"></script>
+    <script src="{{asset('assets/js/jquery-hover-effect.js')}}"></script>
+    <script src="{{asset('assets/js/animate.js')}}"></script>
+
+<!-- Template Custom JavaScript File -->
+<script src="{{asset('assets/js/custom.js')}}"></script>
 </html>
